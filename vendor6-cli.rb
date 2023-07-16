@@ -5,21 +5,21 @@
 class Vendor6Cli < Formula
   desc "An Interactive CLI tool to identify vendors by IPv6 address"
   homepage "https://github.com/kusshi94/vendor6-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.1/vendor6-cli_Darwin_arm64.tar.gz"
-      sha256 "95045fab9b33e063679cea57392dac018876dee65297e8745fdf1ab889363311"
+      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.2/vendor6-cli_Darwin_arm64.tar.gz"
+      sha256 "894bd1627be37eee9e0767d4bf2904836c4ae6e9fa652d53197a5dcc879898cc"
 
       def install
         bin.install "vendor6-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.1/vendor6-cli_Darwin_x86_64.tar.gz"
-      sha256 "85d3e2ab6744e792023fd86c5037679836ecb1367255b13423aa689531320494"
+      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.2/vendor6-cli_Darwin_x86_64.tar.gz"
+      sha256 "558b7ac0d2a8e9f77aa992f13447645ef2a62e28b747cfa45c98a1bba0b325ce"
 
       def install
         bin.install "vendor6-cli"
@@ -29,16 +29,16 @@ class Vendor6Cli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.1/vendor6-cli_Linux_arm64.tar.gz"
-      sha256 "d95bbf3e3f70ce9c9df685efa173ccab0c74dae6db32e2f123ce230286b45602"
+      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.2/vendor6-cli_Linux_arm64.tar.gz"
+      sha256 "25e59f0583ac770186aa5edfc6162519714d7544c9a0c384661a97e627187dca"
 
       def install
         bin.install "vendor6-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.1/vendor6-cli_Linux_x86_64.tar.gz"
-      sha256 "3558363d87e76503f29194a6c1b5fd8b6b9410b3a983c6c35aa8285307251c92"
+      url "https://github.com/kusshi94/vendor6-cli/releases/download/v0.2.2/vendor6-cli_Linux_x86_64.tar.gz"
+      sha256 "76e800da4419f2855196da92c8f637b368210bfdadf268a1013158bd154800a5"
 
       def install
         bin.install "vendor6-cli"
